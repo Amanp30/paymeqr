@@ -1,0 +1,40 @@
+{
+  "name": "paymeqr",
+  "version": "1.0.0",
+  "description": "Generate custom UPI QR codes and payment links without a backend. Perfect for creators, freelancers, and solo developers.",
+  "main": "dist/paymeqr.min.js",
+  "unpkg": "dist/paymeqr.min.js",
+  "jsdelivr": "dist/paymeqr.min.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": {
+    "name": "Aman Pareek",
+    "url": "https://amanpareek.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "upi",
+    "qr",
+    "payment",
+    "donation",
+    "tip",
+    "freelancer",
+    "creator",
+    "paymeqr",
+    "javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amanp30/paymeqr"
+  },
+  "homepage": "https://amanp30.github.io/paymeqr/",
+  "bugs": {
+    "url": "https://github.com/amanp30/paymeqr/issues"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Minify with Terser",
+      "type": "shell",
+      "command": "npx terser src/paymeqr.js -o dist/paymeqr.min.js --compress --mangle",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Minify paymeqr.js using Terser"
+    }
+  ]
+}
