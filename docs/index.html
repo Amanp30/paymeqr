@@ -176,6 +176,38 @@ app.listen(3000, () =&gt; console.log("QR API running on port 3000"));</code></p
       </ul>
     </section>
 
+
+    <div style="max-width: 420px; margin: 3rem auto; padding: 2rem; border: 1px solid #ccc; border-radius: 12px; text-align: center; font-family: 'Segoe UI', sans-serif; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+      <h2 style="margin-bottom: 0.5rem; font-size: 1.5rem;">☕ Like PayMeQR?</h2>
+      <p style="font-size: 1rem; color: #444; margin-bottom: 1rem;">
+        If this package helped you, consider sending a small donation as a thank you.
+      </p>
+    
+      <p style="font-size: 0.95rem; margin-bottom: 0.3rem;"><strong>UPI ID:</strong> <code>pareekaman1@ybl</code></p>
+    
+      <div id="qrCodeContainer" style="margin: 1.5rem 0;"></div>
+    
+      <p style="font-size: 0.85rem; color: #666;">
+        Scan this QR with any UPI app like GPay, PhonePe, Paytm, etc.
+      </p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/paymeqr@latest/dist/paymeqr.min.js"></script>
+    <script>
+      const qr = new PayMeQR({ upiId: "pareekaman1@ybl" });
+      qr.setPayeeName("Aman Pareek").createQrCode().then(img => {
+        const qrDiv = document.getElementById('qrCodeContainer');
+        img.style.width = "200px";
+        img.style.height = "200px";
+        img.style.borderRadius = "8px";
+        img.style.display = "block";
+        img.style.margin = "0 auto";
+        img.alt = "UPI QR Code for donation";
+        qrDiv.appendChild(img);
+      });
+    </script>
+    
+
     <footer class="pt-6 mt-10 border-t text-center text-gray-500 text-sm">
       Made with 💚 in India · 100% Offline Friendly · No dependencies
     </footer>
