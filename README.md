@@ -1,5 +1,9 @@
 # PayMeQR
 
+<p align="center">
+  <img src="./assets/logo.png" alt="PayMeQR Logo" width="300"/>
+</p>
+
 **PayMeQR** is a lightweight, dependency-free JavaScript library to generate **UPI QR codes** in both **browser** and **Node.js**.  
 Built for creators, freelancers, and individuals who want a simple way to accept UPI payments.
 
